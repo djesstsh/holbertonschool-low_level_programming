@@ -1,12 +1,13 @@
-#!/bin/bash
-gcc -o 4-puts_c 
-#include <stdio.h>
+ #include <stdio.h>
+
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - Prints "Programming is like building a multilingual puzzle, followed by a new line."
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n")
-	return (0)
+	puts("\"Programming is like building a multilingual puzzle\n");
+
+	return (0);
 }
