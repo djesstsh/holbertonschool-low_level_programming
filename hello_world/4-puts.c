@@ -1,11 +1,7 @@
- #include <stdio.h>
-/*
- * main - Entry point
- * Description: Call puts and receives value returned by puts after its execution
- * Return: Always return 0 to indicate success
- */
+#include <stdio.h>
+
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	puts("Programming is like building a multilingual puzzle \n");
+	return 0;
 }
