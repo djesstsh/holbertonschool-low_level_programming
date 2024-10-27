@@ -2,10 +2,19 @@
 /**
  * _abs - Computes absolue value
  *
+ * @abs:parameter
+ *
  * Return:Always 0 to indicate success
  */
 
-int _abs(int)
+int _abs(int abs)
 {
-	int avi;
-
+	if (abs < 0)
+	{
+		return (-abs);
+	}
+	else
+	{
+		return (abs);
+	}
+}
