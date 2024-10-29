@@ -18,7 +18,12 @@ int main(void)
 		}
 		else if (pl % 5 == 0)
 		{
-			printf("Buzz ");
+			if (pl == 100)
+			{
+				printf("Buzz");
+			}
+			else
+				printf("Buzz ");
 		}
 		else if (pl % 3 == 0)
 		{
