@@ -21,11 +21,10 @@ void print_diagonal(int n)
 		{
 			for (lig = 0; lig < n; lig++)
 			{
-				if (lig == pl)
-					_putchar(92);
-				else if (lig < pl)
-					_putchar(' ');
+				_putchar(' ');
 			}
+			_putchar('\\');
+			_putchar('\n');
 		}
 	}
 }
