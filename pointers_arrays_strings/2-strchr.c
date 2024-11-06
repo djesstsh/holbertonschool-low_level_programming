@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * *_strchr - locates a character in a string
  * @s:parameter
@@ -8,4 +9,12 @@
 
 char *_strchr(char *s, char c)
 {
-	for (
+	char *pl;
+
+	pl = strchr(s, c);
+
+	if (pl != NULL)
+		return (pl);
+	else
+		return (NULL);
+}
