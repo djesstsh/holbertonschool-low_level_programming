@@ -8,7 +8,8 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int pl, lig, bun;
+	int pl, lig;
+	unsigned int bun = 0;
 
 	for (pl = 0; s[pl] != ('\0'); pl++)
 	{
@@ -19,7 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 				bun++;
 				break;
 			}
-			else if ((accept[lig + 1]) == '\0')
+			else if ((accept[lig + 1]) == ('\0'))
 				return (bun);
 		}
 	}
