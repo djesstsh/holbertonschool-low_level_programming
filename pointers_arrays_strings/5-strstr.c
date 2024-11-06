@@ -20,11 +20,15 @@ char *_strstr(char *haystack, char *needle)
 	{
 		for (lig = 0; needle[lig] != '\0'; lig++)
 		{
+			if (haystack[pl + lig] != needle[lig])
+			{
+				break;
+			}
+		}
 			if (needle[lig] == '\0')
 			{
 				return (&haystack[pl]);
 			}
-		}
 	}
 	return (NULL);
 }
