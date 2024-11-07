@@ -6,15 +6,10 @@
 
 void _print_rev_recursion(char *s)
 {
-	int pl = 0;
-	int lig;
-
-	while (s[pl] != '\0')
+	if (*s == '\0')
 	{
-		pl++;
+		return;
 	}
-	for (lig = pl - 1; lig >= 0; lig--)
-	{
-		_putchar(s[lig]);
-	}
+	_print_rev_recursion(s + 1);
+	_putchar(*s);
 }
